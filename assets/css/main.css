@@ -7,7 +7,8 @@ body {
     --bg-input: #3a393c;
     --line-color: #393a3b;
     --bg-hover: #626465;
-    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 * {
@@ -25,11 +26,6 @@ body {
 .header__center {
     display: flex;
     align-items: center;
-}
-
-.left__container {
-    width: 360px;
-    padding: 10px 15px 0 15px;
 }
 
 .header__left {
@@ -153,6 +149,10 @@ svg {
     cursor: pointer;
 }
 
+.left__nav--right {
+    display: flex;
+}
+
 .header__right_notice {
     box-sizing: border-box;
     padding-top: 5px;
@@ -196,4 +196,57 @@ svg {
 
 .right__container {
     border-left: 1px solid var(--line-color);
+}
+
+.left__container {
+    width: 360px;
+    padding: 10px 3px 0 15px;
+    box-sizing: border-box;
+}
+
+.left__container--top {
+    height: 107px;
+}
+
+.left__container--bottom {
+    overflow-y: scroll;
+    height: calc(100vh - 175px);
+    padding-right: 0 !important;
+}
+
+.left__container--bottom::-webkit-scrollbar {
+    width: 8px;
+    display: none;
+}
+
+.left__container--bottom:hover::-webkit-scrollbar {
+    display: block;
+}
+
+
+/* Track */
+
+.left__container--bottom::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Handle */
+
+.left__container--bottom::-webkit-scrollbar-thumb {
+    background: var(--bg-hover);
+    border-radius: 5px;
+}
+
+
+/* Handle on hover */
+
+.left__container--bottom::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    display: block;
+    transition: 1s;
+}
+
+.left__nav {
+    display: flex;
 }
