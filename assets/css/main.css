@@ -6,6 +6,8 @@ body {
     --fill-color: #b0b3b8;
     --bg-input: #3a393c;
     --line-color: #393a3b;
+    --bg-hover: #626465;
+    height: 100vh;
 }
 
 * {
@@ -25,6 +27,11 @@ body {
     align-items: center;
 }
 
+.left__container {
+    width: 360px;
+    padding: 10px 15px 0 15px;
+}
+
 .header__left {
     padding-right: 0px !important;
 }
@@ -35,7 +42,7 @@ body {
     padding-right: 30px !important;
 }
 
-.header__center__menu {
+.header__center_menu {
     padding-top: 10px;
     width: 119.59px;
     text-align: center;
@@ -43,13 +50,10 @@ body {
     cursor: pointer;
 }
 
-.header__center__menu:hover {
+.header__center_menu:hover {
     background-color: var(--bg-input);
+    transition: 0.2s;
     border-radius: 9px;
-}
-
-.header__right {
-    background-color: aquamarine;
 }
 
 .logo__img {
@@ -122,4 +126,74 @@ svg {
     font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-stretch: unset;
+}
+
+.header__right_more,
+.header__right_setting {
+    color: var(--text-color);
+}
+
+.header__right_more {}
+
+.header__right--circle {
+    border-radius: 50%;
+    background-color: var(--bg-input);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 9px;
+}
+
+.header__right {
+    justify-content: flex-end;
+}
+
+.header__right div {
+    cursor: pointer;
+}
+
+.header__right_notice {
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.header_avatar__img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.header__right_user {
+    display: flex;
+    box-sizing: border-box;
+    padding: 2px 5px;
+    height: 36px;
+}
+
+.header__right_user:hover {
+    background-color: var(--bg-input);
+    border-radius: 25px;
+}
+
+.header__fisrtname {
+    padding: 10px;
+    line-height: 10px;
+}
+
+#header__fisrtname {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.header__right_user:hover,
+.header__right_more:hover,
+.header__right_notice:hover,
+.header__right_setting:hover {
+    background-color: var(--bg-hover);
+    transition: 0.2s;
+}
+
+.right__container {
+    border-left: 1px solid var(--line-color);
 }
