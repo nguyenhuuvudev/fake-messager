@@ -213,6 +213,10 @@ svg {
     height: 107px;
 }
 
+.hide {
+    opacity: 0;
+}
+
 .none {
     display: none !important;
 }
@@ -429,6 +433,14 @@ svg {
     padding-top: 0;
 }
 
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
 
 /* right__container */
 
@@ -485,10 +497,21 @@ svg {
     white-space: pre-wrap;
     word-wrap: break-word;
     max-width: 500px;
+}
+
+.wrap_msg {
     box-sizing: border-box;
-    margin: 2px 2px;
+    margin: 0 0 2px 0;
+    max-width: 500px;
     background-color: var(--bg-input);
-    padding: 9px 11px;
+    padding: 11px 12px;
+    width: fit-content;
+}
+
+#list_msg_right {}
+
+.msg_right .wrap_msg.tail {
+    margin-bottom: 5px;
 }
 
 .you {
@@ -541,7 +564,7 @@ svg {
 
 .chat__history {
     overflow-y: scroll;
-    height: calc(100vh - 120px - 60px);
+    height: calc(100vh - 120px - 50px);
 }
 
 .messager__avatar--position {
@@ -568,7 +591,7 @@ svg {
 /* form send message */
 
 .send__message {
-    height: 53px;
+    height: 40px;
     display: flex;
     box-sizing: border-box;
     align-items: center;
