@@ -457,6 +457,10 @@ svg {
     margin-left: 10px;
 }
 
+.m_right10 {
+    margin-right: 10px;
+}
+
 .chat_nav .messager__avatar {
     width: 40px;
     height: 40px;
@@ -474,24 +478,53 @@ svg {
     width: 35%;
 }
 
+
+/* css to message */
+
 .msg {
-    white-space: pre;
+    white-space: pre-wrap;
     word-wrap: break-word;
     max-width: 500px;
     box-sizing: border-box;
     margin: 2px 2px;
     background-color: var(--bg-input);
     padding: 9px 11px;
+}
+
+.you {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-.top {
+.you.tail {
+    border-bottom-left-radius: 15px;
+}
+
+.you.top {
     border-top-left-radius: 15px;
 }
 
-.tail {
+.you.single {
+    border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+.me {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.me.single {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.me.tail {
+    border-bottom-right-radius: 15px;
+}
+
+.me.top {
+    border-top-right-radius: 15px;
 }
 
 .messager__avatar--resize {
@@ -499,6 +532,7 @@ svg {
     height: 28px !important;
     align-items: flex-end;
     height: 100%;
+    margin-bottom: 2px;
 }
 
 .message__detail {
@@ -507,9 +541,56 @@ svg {
 
 .chat__history {
     overflow-y: scroll;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 120px - 60px);
 }
 
 .messager__avatar--position {
     margin-left: 10px;
+}
+
+.msg_right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sender {
+    width: 100%;
+    margin-top: 3px;
+}
+
+.message .send_seen__status {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+
+/* form send message */
+
+.send__message {
+    height: 53px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.send__message div {
+    cursor: pointer;
+}
+
+.input__send {
+    height: 37px;
+    position: relative;
+}
+
+.input__send--modify {
+    height: 37px;
+    padding-left: 15px !important;
+    padding-right: 35px !important;
+}
+
+.input__send--icons {
+    position: absolute;
+    right: 9px;
+    top: 7px;
 }
