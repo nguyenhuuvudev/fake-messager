@@ -594,7 +594,7 @@ svg {
     height: 40px;
     display: flex;
     box-sizing: border-box;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .send__message div {
@@ -602,7 +602,7 @@ svg {
 }
 
 .input__send {
-    height: 37px;
+    /* height: 37px; */
     position: relative;
 }
 
@@ -615,5 +615,40 @@ svg {
 .input__send--icons {
     position: absolute;
     right: 9px;
-    top: 7px;
+    bottom: 3px;
+}
+
+.span__send {
+    display: block;
+    height: fit-content;
+    cursor: default;
+    position: relative;
+    bottom: -5px;
+    padding-left: 0 !important;
+    /* max-height: 110px;
+    overflow-y: scroll; */
+}
+
+.span__send::-webkit-scrollbar {}
+
+.hide--scollbar::-webkit-scrollbar {
+    display: none;
+}
+
+#txtMessage {
+    outline: none;
+    max-height: 90px;
+    overflow-y: scroll;
+    margin-right: 2px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    cursor: text;
+}
+
+#chat__history {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100%;
 }
