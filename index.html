@@ -13,23 +13,32 @@
 </head>
 
 <body>
+
     <header class="grid header">
         <div class="row no-gutters">
             <!-- header left -->
-            <div class="col l-3 m-3 c-3 header__left">
+            <div class="col l-3 m-2 c-5 header__left">
                 <div class="logo">
                     <a href="/">
                         <img src="./assets/img/icon-fb.png" class="logo__img" alt="">
                     </a>
                 </div>
-                <div class="search">
+                <div class="search flex">
+                    <i class="far fa-arrow-left back_icon none"></i>
                     <i class="fal fa-search search__button"></i>
                     <input type="text" class="search__input" id="search__person" placeholder="Tìm kiếm trên Facebook">
                 </div>
+                <!-- show 3 tiles on mobile -->
+                <div class="header__center--mobile none">
+                    <div class="header__center_menu">
+                        <svg viewBox="0 0 28 28" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 em6zcovv" height="28" width="28"><path d="M23.5 4a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19zm0 18a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19zm0-9a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19z"></path></svg>
+                    </div>
+                </div>
+
             </div>
 
             <!-- header center -->
-            <div class="col l-6 m-6 c-4 header__center">
+            <div class="col l-6 m-6 c-6 header__center">
                 <div class="header__center_menu">
                     <svg viewBox="0 0 28 28" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 em6zcovv" height="28" width="28"><path d="M17.5 23.979 21.25 23.979C21.386 23.979 21.5 23.864 21.5 23.729L21.5 13.979C21.5 13.427 21.949 12.979 22.5 12.979L24.33 12.979 14.017 4.046 3.672 12.979 5.5 12.979C6.052 12.979 6.5 13.427 6.5 13.979L6.5 23.729C6.5 23.864 6.615 23.979 6.75 23.979L10.5 23.979 10.5 17.729C10.5 17.04 11.061 16.479 11.75 16.479L16.25 16.479C16.939 16.479 17.5 17.04 17.5 17.729L17.5 23.979ZM21.25 25.479 17 25.479C16.448 25.479 16 25.031 16 24.479L16 18.327C16 18.135 15.844 17.979 15.652 17.979L12.348 17.979C12.156 17.979 12 18.135 12 18.327L12 24.479C12 25.031 11.552 25.479 11 25.479L6.75 25.479C5.784 25.479 5 24.695 5 23.729L5 14.479 3.069 14.479C2.567 14.479 2.079 14.215 1.868 13.759 1.63 13.245 1.757 12.658 2.175 12.29L13.001 2.912C13.248 2.675 13.608 2.527 13.989 2.521 14.392 2.527 14.753 2.675 15.027 2.937L25.821 12.286C25.823 12.288 25.824 12.289 25.825 12.29 26.244 12.658 26.371 13.245 26.133 13.759 25.921 14.215 25.434 14.479 24.931 14.479L23 14.479 23 23.729C23 24.695 22.217 25.479 21.25 25.479Z"></path></svg>
                 </div>
@@ -56,8 +65,9 @@
                 </div>
             </div>
 
+
             <!-- header right -->
-            <div class="col l-3 m-3 c-5 header__right">
+            <div class="col l-3 m-3 c-7 header__right">
                 <div class="header__right_user">
                     <div class="header__avatar">
                         <img src="./assets/img/avatar.jpg" class="header_avatar__img" alt="">
@@ -79,7 +89,7 @@
         </div>
     </header>
     <!-- body -->
-    <section class="container row no-gutters">
+    <section class="container row no-gutters" style="flex-wrap: nowrap;">
         <div class="left__container">
             <div class="left__container--top">
                 <div class="left__nav">
@@ -118,8 +128,8 @@
                             <h3>Nguyễn Hữu Vũ</h3>
                         </div>
                         <div class="messager__right--msg">
-                            <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
-                            <span id="time_new_msg">8 phút</span>
+                            <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =)) ddepj trai nho ok luon vl hay that day =)) ddepj trai nho ok luon vl hay that day =)) ddepj trai nho ok luon vl hay that day =)) ddepj trai nho ok luon vl hay that day =)) ddepj trai nho ok luon vl hay that day =))s</span>
+                            <span class="time_new_msg">8 phút</span>
                         </div>
                     </div>
                     <!-- common -->
@@ -139,8 +149,8 @@
                             <h3>Nguyễn Hữu Vũ</h3>
                         </div>
                         <div class="messager__right--msg">
-                            <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
-                            <span id="time_new_msg">8 phút</span>
+                            <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
+                            <span class="time_new_msg">8 phút</span>
                         </div>
                     </div>
                     <!-- common -->
@@ -161,8 +171,8 @@
                             <h3>Nguyễn Hữu Vũ</h3>
                         </div>
                         <div class="messager__right--msg">
-                            <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
-                            <span id="time_new_msg">8 phút</span>
+                            <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
+                            <span class="time_new_msg">8 phút</span>
                         </div>
                     </div>
                     <!-- common -->
@@ -182,8 +192,8 @@
                             <h3>Nguyễn Hữu Vũ</h3>
                         </div>
                         <div class="messager__right--msg">
-                            <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
-                            <span id="time_new_msg">8 phút</span>
+                            <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
+                            <span class="time_new_msg">8 phút</span>
                         </div>
                     </div>
                     <!-- common -->
@@ -204,8 +214,8 @@
                             <h3>Nguyễn Hữu Vũ</h3>
                         </div>
                         <div class="messager__right--msg">
-                            <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
-                            <span id="time_new_msg">8 phút</span>
+                            <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
+                            <span class="time_new_msg">8 phút</span>
                         </div>
                     </div>
                     <!-- common -->
@@ -225,8 +235,8 @@
                             <h3>Nguyễn Hữu Vũ</h3>
                         </div>
                         <div class="messager__right--msg">
-                            <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
-                            <span id="time_new_msg">8 phút</span>
+                            <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
+                            <span class="time_new_msg">8 phút</span>
                         </div>
                     </div>
                     <!-- common -->
@@ -247,8 +257,8 @@
                             <h3>Nguyễn Hữu Vũ</h3>
                         </div>
                         <div class="messager__right--msg">
-                            <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
-                            <span id="time_new_msg">8 phút</span>
+                            <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
+                            <span class="time_new_msg">8 phút</span>
                         </div>
                     </div>
                     <!-- common -->
@@ -268,8 +278,8 @@
                             <h3>Nguyễn Hữu Vũ</h3>
                         </div>
                         <div class="messager__right--msg">
-                            <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
-                            <span id="time_new_msg">8 phút</span>
+                            <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
+                            <span class="time_new_msg">8 phút</span>
                         </div>
                     </div>
                     <!-- common -->
@@ -290,8 +300,8 @@
                             <h3>Nguyễn Hữu Vũ</h3>
                         </div>
                         <div class="messager__right--msg">
-                            <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
-                            <span id="time_new_msg">8 phút</span>
+                            <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
+                            <span class="time_new_msg">8 phút</span>
                         </div>
                     </div>
                     <!-- common -->
@@ -311,8 +321,8 @@
                             <h3>Nguyễn Hữu Vũ</h3>
                         </div>
                         <div class="messager__right--msg">
-                            <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
-                            <span id="time_new_msg">8 phút</span>
+                            <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span>
+                            <span class="time_new_msg">8 phút</span>
                         </div>
                     </div>
                     <!-- common -->
@@ -323,25 +333,22 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
         <div class="right__container">
             <div class="messages">
                 <div class="chat_nav flex">
-                    <div class="flex">
+                    <div class="flex chat_nav--left">
                         <div class="messager__avatar">
                             <img src="./assets/img/avatar.jpg" alt="">
                             <i class="dot_active"></i>
                         </div>
                         <div class="messager__right">
                             <div class="messager__right--fullname">
-                                <h3 class="bold">Nguyễn Hữu Vũ</h3>
+                                <h3 class="bold" id="chat_with">Nguyễn Hữu Vũ</h3>
                             </div>
                             <div class="messager__right--msg">
-                                <!-- <span id="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span> -->
+                                <!-- <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span> -->
                                 <span id="time_onl_lastest">Hoạt động 8 phút trước</span>
                             </div>
                         </div>
@@ -363,101 +370,49 @@
                 <div class="chat__history">
 
                     <div id="chat__history">
-                        <div class="message flex">
-                            <div class="messager__avatar messager__avatar--resize messager__avatar--position">
-                                <img src="./assets/img/avatar.jpg" alt="">
-                            </div>
-                            <div class="message__detail">
 
-                                <p class="wrap_msg you single">
-                                    <span class="msg">dfgssfdgsdgffd dfgssfdgsdgffd dfgssfdgsdgffd</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="message flex">
-                            <div class="message__detail sender">
-                                <div class="msg_right">
-                                    <p class="wrap_msg me single">
-                                        <span class="msg">dfgssfdgsdgffd dfgssfdgsdgffd dfgssfdgsdgffd</span>
-                                    </p>
-                                    <div class="send_seen__status hide">
-                                        <!-- <img src="./assets/img/avatar.jpg" alt=""> -->
-                                        <i class="far fa-check-circle"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- tin nhắn nhận đc -->
                         <div class="message flex">
                             <div class="messager__avatar messager__avatar--resize messager__avatar--position">
-                                <img src="./assets/img/avatar.jpg" alt="">
+                                <!-- <img src="./assets/img/avatar.jpg" alt=""> -->
                             </div>
                             <div class="message__detail">
-                                <p class="wrap_msg you single">
-                                    <span class="msg">1 dfgssfdgsdgffd dfgssfdgsdgffd dfgssfdgsdgffd</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="message flex">
-                            <div class="message__detail sender">
-                                <div class="msg_right">
-                                    <p class="wrap_msg me single">
-                                        <span class="msg">dfgssfdgsdgffd dfgssfdgsdgffd dfgssfdgsdgffd</span>
-                                    </p>
-                                    <div class="send_seen__status hide">
-                                        <!-- <img src="./assets/img/avatar.jpg" alt=""> -->
-                                        <i class="far fa-check-circle"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="message flex">
-                            <div class="messager__avatar messager__avatar--resize messager__avatar--position">
-                                <img src="./assets/img/avatar.jpg" alt="">
-                            </div>
-                            <div class="message__detail">
-                                <p class="wrap_msg you single">
-                                    <span class="msg">1 dfgssfdgsdgffd</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="message flex">
-                            <div class="message__detail sender">
-                                <div class="msg_right">
-                                    <div id="list_msg_right">
-                                        <p class="wrap_msg me right top">
-                                            <span class="msg">dfg</span>
-                                        </p>
-                                        <div class="clear"></div>
-                                        <p class="wrap_msg me tail">
-                                            <span class="msg">dfgssfdgsdgffd</span>
-                                        </p>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="send_seen__status hide">
-                                        <!-- <img src="./assets/img/avatar.jpg" alt=""> -->
-                                        <i class="far fa-check-circle"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="message flex">
-                            <div class="messager__avatar messager__avatar--resize messager__avatar--position">
-                                <img src="./assets/img/avatar.jpg" alt="">
-                            </div>
-                            <div class="message__detail">
-                                <p class="wrap_msg you single">
+                                <p class="wrap_msg you top max-width-msg">
                                     <span class="msg">1  djfhdkjf dskfjksd  kdsjf jkdfjds dsjf k dsk fdsk f sdkds dsk fdsk fdk dfgssfdgsdgffd dfgssfdgsdgffd dfgssfdgsdgffd</span>
                                 </p>
                             </div>
                         </div>
+                        <!-- tin nhắn nhận đc -->
+                        <div class="message flex">
+                            <div class="messager__avatar messager__avatar--resize messager__avatar--position">
+                                <!-- <img src="./assets/img/avatar.jpg" alt=""> -->
+                            </div>
+                            <div class="message__detail">
+                                <p class="wrap_msg you max-width-msg">
+                                    <span class="msg">1  djfhdkjf dskfjksd  kdsjf jkdfjds dsjf k dsk fdsk f sdkds dsk fdsk fdk dfgssfdgsdgffd dfgssfdgsdgffd dfgssfdgsdgffd</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- tin nhắn nhận đc -->
+                        <div class="message flex">
+                            <div class="messager__avatar messager__avatar--resize messager__avatar--position">
+                                <img src="./assets/img/avatar.jpg" alt="">
+                            </div>
+                            <div class="message__detail">
+                                <p class="wrap_msg you tail max-width-msg">
+                                    <span class="msg">1  djfhdkjf dskfjksd  kdsjf jkdfjds dsjf k dsk fdsk f sdkds dsk fdsk fdk dfgssfdgsdgffd dfgssfdgsdgffd dfgssfdgsdgffd</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- tin nhắn gửi đi  -->
                         <div class="message flex">
                             <div class="message__detail sender">
                                 <div class="msg_right">
-                                    <div id="list_msg_right">
-                                        <p class="wrap_msg me right single">
-                                            <span class="msg">dfg</span>
+                                    <div class="max-width-msg">
+                                        <p class="wrap_msg me right top">
+                                            <span class="msg">dfg 1  djfhdkjf dskfjksd  kdsjf jkdfjds dsjf k dsk fdsk f sdkds dsk fdsk fdk dfgssfdgsdgffd dfgssfdgsdgffd dfgssfdgsdgffd1  djfhdkjf dskfjksd  kdsjf jkdfjds dsjf k dsk fdsk f sdkds dsk fdsk fdk dfgssfdgsdgffd dfgssfdgsdgffd dfgssfdgsdgffd1  djfhdkjf dskfjksd  kdsjf jkdfjds dsjf k dsk fdsk f sdkds dsk fdsk fdk dfgssfdgsdgffd dfgssfdgsdgffd dfgssfdgsdgffd</span>
                                         </p>
-                                        <div class="clear"></div>
                                     </div>
                                     <div class="send_seen__status">
                                         <!-- <img src="./assets/img/avatar.jpg" alt=""> -->
@@ -466,6 +421,23 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- tin nhắn gửi đi  -->
+                        <div class="message flex">
+                            <div class="message__detail sender">
+                                <div class="msg_right">
+                                    <div class="max-width-msg">
+                                        <p class="wrap_msg me right tail">
+                                            <span class="msg"> dfgssfdgsdgffd dfgssfdgsdgffd</span>
+                                        </p>
+                                    </div>
+                                    <div class="send_seen__status">
+                                        <!-- <img src="./assets/img/avatar.jpg" alt=""> -->
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="send__message">
@@ -482,7 +454,6 @@
                         <svg x="0px" y="0px" viewBox="0 0 16 16" height="20px" width="20px" class="a8c37x1j ms05siws hr662l2t b7h9ocf4 crt8y2ji"><path d="M.783 12.705c.4.8 1.017 1.206 1.817 1.606 0 0 1.3.594 2.5.694 1 .1 1.9.1 2.9.1s1.9 0 2.9-.1 1.679-.294 2.479-.694c.8-.4 1.157-.906 1.557-1.706.018 0 .4-1.405.5-2.505.1-1.2.1-3 0-4.3-.1-1.1-.073-1.976-.473-2.676-.4-.8-.863-1.408-1.763-1.808-.6-.3-1.2-.3-2.4-.4-1.8-.1-3.8-.1-5.7 0-1 .1-1.7.1-2.5.5s-1.417 1.1-1.817 1.9c0 0-.4 1.484-.5 2.584-.1 1.2-.1 3 0 4.3.1 1 .2 1.705.5 2.505zm10.498-8.274h2.3c.4 0 .769.196.769.696 0 .5-.247.68-.747.68l-1.793.02.022 1.412 1.252-.02c.4 0 .835.204.835.704s-.442.696-.842.696H11.82l-.045 2.139c0 .4-.194.8-.694.8-.5 0-.7-.3-.7-.8l-.031-5.631c0-.4.43-.696.93-.696zm-3.285.771c0-.5.3-.8.8-.8s.8.3.8.8l-.037 5.579c0 .4-.3.8-.8.8s-.8-.4-.8-.8l.037-5.579zm-3.192-.825c.7 0 1.307.183 1.807.683.3.3.4.7.1 1-.2.4-.7.4-1 .1-.2-.1-.5-.3-.9-.3-1 0-2.011.84-2.011 2.14 0 1.3.795 2.227 1.695 2.227.4 0 .805.073 1.105-.127V8.6c0-.4.3-.8.8-.8s.8.3.8.8v1.8c0 .2.037.071-.063.271-.7.7-1.57.991-2.47.991C2.868 11.662 1.3 10.2 1.3 8s1.704-3.623 3.504-3.623z" fill="#0084FF" fill-rule="nonzero"></path></svg>
                     </div>
                     <div class="search input__send m_left10">
-                        <!-- <input type="text" class="search__input input__send--modify" id="search__person" placeholder="Aa"> -->
                         <span class=" search__input input__send--modify span__send ">
                             <div placeholder="dfds" class="hide--scollbar" contenteditable="true" id="txtMessage"></div>
                         </span>
@@ -494,13 +465,111 @@
                 </div>
             </div>
             <div class="chat__option">
-                ok
+                <div class="chat__option_top--mobile">
+                    <div class="back_icon_message">
+                        <i class="far fa-arrow-left"></i>
+                    </div>
+                    <div class="chat__option_top--mobile-more">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="flex chat__option_top">
+                    <div class="messager__avatar chat__option_top--position">
+                        <img src="./assets/img/avatar.jpg" alt="">
+                        <i class="dot_active"></i>
+                    </div>
+                    <div class="messager__right">
+                        <div class="messager__right--fullname chat__option_top--center">
+                            <h3 class="bold">Nguyễn Hữu Vũ</h3>
+                        </div>
+                        <div class="messager__right--msg chat__option_top--center">
+                            <!-- <span class="compact_new_msg">ddepj trai nho ok luon vl hay that day =))</span> -->
+                            <span id="time_onl_lastest">Hoạt động 8 phút trước</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__option--bottom">
+                    <div class="chat__custom">
+                        <div class="chat__option--title">
+                            <h2>Tùy chỉnh đoạn chat</h2>
+                        </div>
+
+                        <div class="chat__option--list">
+                            <div class="chat__option--li flex">
+                                <div class="chat__option--icon">
+                                    <svg role="presentation" height="24" width="24" fill="none" viewBox="0 0 24 24" data-testid="mw_edit_theme_svg:Default Blue"><defs><mask id="jsc_c_78"><rect width="100%" height="100%" fill="white"></rect><circle cx="12" cy="12" r="3" fill="black"></circle></mask></defs><circle cx="12" cy="12" r="9" fill="#0084FF" mask="url(#jsc_c_78)"></circle></svg>
+                                </div>
+                                <h2>Đổi chủ đề</h2>
+                            </div>
+                            <div class="chat__option--li flex">
+                                <div class="chat__option--icon">
+                                    <svg viewBox="0 0 16 16" height="20" width="20"><path fill="#0084FF" d="M16,9.1c0-0.8-0.3-1.1-0.6-1.3c0.2-0.3,0.3-0.7,0.3-1.2c0-1-0.8-1.7-2.1-1.7h-3.1c0.1-0.5,0.2-1.3,0.2-1.8 c0-1.1-0.3-2.4-1.2-3C9.3,0.1,9,0,8.7,0C8.1,0,7.7,0.2,7.6,0.4C7.5,0.5,7.5,0.6,7.5,0.7L7.6,3c0,0.2,0,0.4-0.1,0.5L5.7,6.6 c0,0-0.1,0.1-0.1,0.1l0,0l0,0L5.3,6.8C5.1,7,5,7.2,5,7.4v6.1c0,0.2,0.1,0.4,0.2,0.5c0.1,0.1,1,1,2,1h5.2c0.9,0,1.4-0.3,1.8-0.9 c0.3-0.5,0.2-1,0.1-1.4c0.5-0.2,0.9-0.5,1.1-1.2c0.1-0.4,0-0.8-0.2-1C15.6,10.3,16,9.9,16,9.1z"></path><path fill="#0084FF" d="M3.3,6H0.7C0.3,6,0,6.3,0,6.7v8.5C0,15.7,0.3,16,0.7,16h2.5C3.7,16,4,15.7,4,15.3V6.7C4,6.3,3.7,6,3.3,6z"></path></svg>
+                                </div>
+                                <h2>Thay đổi biểu tượng cảm xúc</h2>
+                            </div>
+                            <div class="chat__option--li flex">
+                                <div class="chat__option--icon">
+                                    <i class="far fa-pen"></i>
+                                </div>
+                                <h2>Chỉnh sửa biệt danh</h2>
+                            </div>
+                            <div class="chat__option--li flex">
+                                <div class="chat__option--icon">
+                                    <i class="far fa-search"></i>
+                                </div>
+                                <h2>Tìm kiếm trong cuộc trò chuyện</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat__privacy">
+                        <div class="chat__option--title">
+                            <h2>Quyền riêng tư và hỗ trợ</h2>
+                        </div>
+                        <div class="chat__option--list">
+                            <div class="chat__option--li flex">
+                                <div class="chat__option--icon">
+                                    <i class="fal fa-bell"></i>
+                                </div>
+                                <h2>Tắt cuộc trò chuyện</h2>
+                            </div>
+                            <div class="chat__option--li flex">
+                                <div class="chat__option--icon">
+                                    <i class="fal fa-comment-alt-times"></i>
+                                </div>
+                                <h2>Bỏ qua tin nhắn</h2>
+                            </div>
+                            <div class="chat__option--li flex">
+                                <div class="chat__option--icon">
+                                    <i class="fal fa-user-times"></i>
+                                </div>
+                                <h2>Chặn</h2>
+                            </div>
+                            <div class="chat__option--li flex">
+                                <div class="chat__option--icon">
+                                    <i class="fal fa-exclamation-triangle"></i>
+                                </div>
+                                <h2>Có gì đó khôn ổn</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__privacy">
+                        <div class="chat__option--title">
+                            <h2>File phương tiện được chia sẻ</h2>
+                        </div>
+                        <div class="chat__option--list">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <script>
     </script>
     <script src="./assets/js/messager.js "></script>
+    <script src="./assets/js/event.js "></script>
+    <script src="./assets/js/handle_dom.js "></script>
 </body>
 
 </html>

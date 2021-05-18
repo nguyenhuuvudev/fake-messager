@@ -5,7 +5,15 @@
 
 /* mobile & tablet */
 
-@media (max-width: 1023px) {}
+@media (max-width: 1023px) {
+    .header__right_user {
+        display: none;
+    }
+    #search__person {
+        width: 34px;
+        padding-right: 4px;
+    }
+}
 
 
 /* tablet */
@@ -15,4 +23,64 @@
 
 /* mobile */
 
-@media (max-width: 739px) {}
+@media (max-width: 739px) {
+    .header__center {
+        display: none;
+    }
+    .header__center--mobile {
+        display: flex !important;
+    }
+    .header__center--mobile .header__center_menu {
+        width: 48px;
+    }
+    .header__left .search {
+        flex: 0;
+        padding-right: 5px;
+    }
+    .compact_new_msg {
+        max-width: unset;
+    }
+    .right__container {
+        display: flex;
+        box-sizing: border-box;
+    }
+    .left__container {
+        display: none;
+        width: 100%;
+        min-width: 250px;
+    }
+    /* show more option */
+    /* .messages {
+        display: none;
+    } */
+    .chat__option {
+        display: none;
+        width: 100%;
+    }
+    .send__message {
+        padding-bottom: 10px;
+        height: unset;
+        left: 0;
+        right: 0;
+        position: fixed;
+        bottom: 0;
+        background-color: var(--bg-color);
+    }
+    #txtMessage {
+        max-height: 75px;
+    }
+    .chat__history {
+        margin-bottom: 45px;
+    }
+    .chat__option_top--mobile {
+        display: flex;
+    }
+}
+
+
+/* 
+@media (max-width: 499px) {
+    header {
+        display: none !important;
+    }
+} */

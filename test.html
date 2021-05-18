@@ -9,7 +9,34 @@
 </head>
 
 <body>
-    <p>a</p>
+    <div style="width: 100px;" contenteditable="true">
+
+        <p>a dksjf sdjfksd sdkf dsflsdfl dslf sdlf sdfjsd flsd fdsl fdslf dslf ds</p>
+    </div>
+    <input type="text" onfocus="okee(this)">
+    <input type="file" id="img">
+    <script>
+        var img = document.getElementById("img");
+        let ok = (_this) => {
+            console.log(_this)
+            if (_this.files && _this.files[0]) {
+
+                var FR = new FileReader();
+
+                FR.addEventListener("load", function(e) {
+                    console.log(e.target.result);
+                    document.getElementById("b64").innerHTML = e.target.result;
+                });
+
+                FR.readAsDataURL(_this.files[0]);
+            }
+        }
+
+        function okee(_this) {
+            console.log(1)
+        }
+        img.addEventListener("change", ok(img))
+    </script>
 </body>
 
 </html>
