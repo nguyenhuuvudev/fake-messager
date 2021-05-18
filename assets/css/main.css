@@ -616,7 +616,8 @@ svg {
     align-items: flex-end;
 }
 
-.send__message div {
+.send__message>div,
+.send__message>label {
     cursor: pointer;
 }
 
@@ -778,4 +779,73 @@ svg {
 
 .chat__nav--option div {
     cursor: pointer;
+}
+
+
+/* css image select */
+
+.list__images {
+    height: 60px;
+    display: flex;
+    padding: 15px 15px 0 15px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 500px;
+}
+
+.image__selected {
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.image__selected img {
+    width: 48px;
+    height: 48px;
+    border-radius: 11px;
+}
+
+.image__selected--remove {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    background-color: #4a4a4a;
+    line-height: 24px;
+}
+
+.image__selected--remove:hover {
+    background-color: var(--bg-color);
+}
+
+.image__selected--remove i {
+    cursor: pointer;
+}
+
+.add__image {
+    cursor: pointer;
+}
+
+.add__image--icon:hover {
+    background-color: #555;
+}
+
+.add__image--icon {
+    width: 100%;
+    height: 100%;
+    line-height: 55px;
+    border-radius: 11px;
+    background-color: #4e5053;
+    text-align: center;
+}
+
+.add__image--icon i {
+    font-size: 25px;
 }

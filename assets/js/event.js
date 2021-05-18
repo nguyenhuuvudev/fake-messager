@@ -1,6 +1,9 @@
 let searchPersonButton = document.getElementById('search__person');
 let logoMain = document.querySelector('.logo');
-let ser
+let listSelectedImages = document.querySelector('.list__images');
+let sendMessageElement = document.querySelector('.send__message');
+let chatHistory = document.getElementById("chat__history");
+let inpSendMessage = document.getElementById("txtMessage");
 
 // handle envent for input search
 
@@ -82,3 +85,69 @@ function scrolTopToBottom()
     chatHistory.scrollTop = chatHistory.scrollHeight;
 }
 
+
+// event select photos to send
+document.getElementById("select__img").addEventListener("change", (e) => {
+    let files = e.target.files;
+    if (FileReader && files && files.length)
+    {
+        for (let file of files)
+        {
+            let fileReader = new FileReader();
+            fileReader.onload = function () {
+                listSelectedImages.innerHTML = createSelectedImage(fileReader.result) + listSelectedImages.innerHTML;
+            }
+            fileReader.readAsDataURL(file)
+        }
+        if (listSelectedImages.style.display == 'none')
+        {
+            listSelectedImages.style.display = 'flex'
+            showHideOptionSendMessage('none')
+        }
+    }
+})
+
+// event remove image selected
+function removeSelectedImage(_this)
+{
+    _this.parentNode.remove();
+    if (listSelectedImages.children.length <= 1)
+    {
+        listSelectedImages.style.display = 'none';
+        showHideOptionSendMessage('block')
+    }
+}
+
+// show or hide option left input send
+function showHideOptionSendMessage(type)
+{
+    for (let i = 0; i < 4; i++)
+    sendMessageElement.children[i].style.display = type
+}
+
+// handle user paste data to contenteditable
+inpSendMessage.addEventListener('paste', (e) => {
+    e.preventDefault();
+
+    // handle paste file
+    let file = e.clipboardData.files[0]
+    if (FileReader && file)
+    {
+        let fileReader = new FileReader();
+        fileReader.onload = function () {
+            listSelectedImages.innerHTML = createSelectedImage(fileReader.result) + listSelectedImages.innerHTML;
+        }
+        fileReader.readAsDataURL(file)
+        if (listSelectedImages.style.display == 'none')
+        {
+            listSelectedImages.style.display = 'flex'
+            showHideOptionSendMessage('none')
+        }
+
+        
+    }
+
+    // handle paste text - anti auto add css in browser
+    inpSendMessage.innerText += e.clipboardData.getData('Text');
+    
+})
